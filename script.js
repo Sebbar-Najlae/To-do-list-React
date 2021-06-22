@@ -21,9 +21,9 @@ class Task extends React.Component {
 class App extends React.Component {
 
   tasksArray = [
-      {value: 'Tâche 1', done: true},
-      {value: 'Tâche 2', done: false},
-      {value: 'Tâche 3', done: false}
+      {value: 'Create branch', done: true},
+      {value: 'Version-0 of project', done: false},
+      {value: 'Prototype', done: false}
     ];
 
   constructor(props) {
@@ -47,13 +47,13 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-sm-6 col-sm-offset-3">
-            <h1> Tâches à faire</h1>
+          <div className="col-sm-6 col-sm-offset-3 text-center">
+            <h1>To-do List</h1>
             <form
               id="form-add"
               className="form-horizontal">
               <div className="input-group">
-                <input type="text" id="addInput" className="form-control"  placeholder="Description de la tâche..." />
+                <input type="text" id="addInput" className="form-control"  placeholder="Add task..." />
                 <div className="input-group-btn">
                   <button type="submit" className="btn btn-default">
                     <span className="glyphicon glyphicon-plus-sign"></span>

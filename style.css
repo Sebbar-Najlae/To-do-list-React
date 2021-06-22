@@ -18,12 +18,12 @@ i { font-style: normal }
 .task p:last-child { margin-bottom: 0 }
 .task+.task { margin-top: -5px }
 .task-success {
-  background-color: #E8F5E9;
-  border-left-color: #4CAF50;
+  background-color: #f5f5e8;
+  border-left-color: #4caf6a;
   text-decoration: line-through;
   font-style: italic;
 }
 .task-info {
-  background-color: #E1F5FE;
-  border-left-color: #03A9F4;
+  background-color: #fee9e1;
+  border-left-color: #f44703;
 }
