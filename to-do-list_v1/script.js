@@ -24,7 +24,7 @@ class App extends React.Component {
     super(props)
 
     this.state = {
-       taskList: [{value:"tâche1",done : true}]
+       taskList: [{value:"Task",done : true}]
     };
   }
   componentDidMount() {
@@ -34,7 +34,7 @@ class App extends React.Component {
 
     var dataList = null;
     // Chargement de données par Ajax
-    $.getJSON( "/5-%C3%A9v%C3%A9nements-state/to-do-list_v1/data.json", 
+    $.getJSON( "./data.json", 
     function( data ) {
       this.setState({ taskList: data});
     }.bind(this))
@@ -62,13 +62,13 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-sm-6 col-sm-offset-3">
-            <h1> Tâches à faire</h1>
+          <div className="col-sm-6 col-sm-offset-3 text-center">
+            <h1> To-do List</h1>
             <form
               id="form-add"
               className="form-horizontal">
               <div className="input-group">
-                <input type="text" id="addInput" className="form-control"  placeholder="Description de la tâche..." />
+                <input type="text" id="addInput" className="form-control"  placeholder="Add task.." />
                 <div className="input-group-btn">
                   <button type="submit" className="btn btn-default">
                     <span className="glyphicon glyphicon-plus-sign"></span>
