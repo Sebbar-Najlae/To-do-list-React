@@ -11,7 +11,7 @@ class Task extends React.Component {
     return (
       <div className={class_name} onClick={this.props.onClickTask}>
         <span>{this.props.value}</span>
-        <i className="close" onClick={this.props.onClickClose}>&times;</i>
+        <i className="glyphicon glyphicon-trash trash" onClick={this.props.onClickClose}></i>
       </div>
     )
   }
@@ -24,9 +24,9 @@ class App extends React.Component {
 
     this.state = {
       tasksArray: [
-        {value: 'Tâche 1', done: true},
-        {value: 'Tâche 2', done: false},
-        {value: 'Tâche 3', done: false}
+        {value: 'Projet fil rouge', done: true},
+        {value: 'Auto-formation React', done: false},
+        {value: 'Réalisation site e-commerce', done: false}
       ],
       value: ''
     }
@@ -94,17 +94,18 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-sm-6 col-sm-offset-3">
-            <h1> Tâches à faire</h1>
+          <div className="col-sm-6 col-sm-offset-3 tab">
+            <h1 className="text-center "> <i className="glyphicon glyphicon-list-alt text-white "></i> To-do List</h1>
+          
             <form
               id="form-add"
               className="form-horizontal"
               onSubmit={this.addTask.bind(this)}>
               <div className="input-group">
-                <input type="text" id="addInput" className="form-control" onChange={this.onChangeInput.bind(this)} placeholder="Description de la tâche..." />
+                <input type="text" id="addInput" className="form-control" onChange={this.onChangeInput.bind(this)} placeholder="Add your task..." />
                 <div className="input-group-btn">
                   <button type="submit" className="btn btn-default">
-                    <span className="glyphicon glyphicon-plus-sign"></span>
+                    <span className="glyphicon glyphicon-plus-sign plus"></span>
                   </button>
                 </div>
               </div>
