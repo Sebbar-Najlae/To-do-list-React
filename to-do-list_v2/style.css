@@ -1,12 +1,15 @@
 * {
-  color: #333;
+  /* color: #333; */
   font-family: "Open Sans", sans-serif;
-  margin-top: 2%;
+  margin-top: 0.5%;
   
 }
 body{
-  background-color: #97b9f8;
+  background: url(bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+
 }
+
 h1 {
   font-size: 50px;
   color: #fff;
@@ -15,6 +18,7 @@ h1 {
 }
 form {
   margin-bottom: 20px;
+  
 
  
 }
@@ -27,6 +31,7 @@ i {
   color: #616161;
   padding: 20px;
   border-left: 5px solid #eee;
+  
 }
 .task:hover {
   cursor: pointer;
@@ -39,20 +44,23 @@ i {
   margin-top: -5px;
 }
 .task-success {
-  background-color: #d6f8e1d0;
-  border-left-color: #288c499c;
+  color: #fff;
+  background-color: #642ca9;
+  border-left-color: #642ca9;
   text-decoration: line-through;
   font-style: italic;
 }
 .task-info {
   background-color: #e3e1fe;
   border-left-color: #959ef9;
+  color: #333;
   
 }
 .tab{
   border-radius: 5%;
   padding: 2%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #97b9f8;
 }
 .text-white{
   color: white;
@@ -70,5 +78,4 @@ i {
   color: #959ef9;
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
-  /* opacity: .2; */
 }

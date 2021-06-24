@@ -92,7 +92,7 @@ class App extends React.Component {
     })
 
     return (
-      <div className="container">
+      <div className="container ">
         <div className="row">
           <div className="col-sm-6 col-sm-offset-3 tab">
             <h1 className="text-center "> <i className="glyphicon glyphicon-list-alt text-white "></i> To-do List</h1>
