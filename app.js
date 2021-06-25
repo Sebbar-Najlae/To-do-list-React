@@ -4,7 +4,7 @@ class Task extends React.Component {
 
   render() {
       let class_name = 'task'
-      class_name += this.props.done ? ' task-done' : ' task-info';
+      class_name += this.props.done ? 'task-done' : 'task-info';
 
       return (
           <div className={class_name}>

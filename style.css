@@ -2,7 +2,7 @@
   color: #333;
   font-family: 'Open Sans', sans-serif;
 }
-h1 { font-size: 24px }
+h1 { font-size: 24px; }
 form { margin-bottom: 20px }
 i { font-style: normal }
 
@@ -17,13 +17,13 @@ i { font-style: normal }
 }
 .task p:last-child { margin-bottom: 0 }
 .task+.task { margin-top: -5px }
-.task-success {
-  background-color: #E8F5E9;
-  border-left-color: #4CAF50;
+.task-done {
+  background-color: #d8f3cb;
+  border-left-color: #51c751;
   text-decoration: line-through;
   font-style: italic;
 }
 .task-info {
-  background-color: #E1F5FE;
-  border-left-color: #03A9F4;
+  background-color: #dfe7fd;
+  border-left-color: #245eff;
 }
